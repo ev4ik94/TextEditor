@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+	<title>Text editor - Quill</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="css/bubble.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/core.css">
+
+	
+</head>
+<body>
+
+<article id="art-edit" >
+	<p class="con-tl" data-label="Title"><input type="text" value="Title" class="tl-field tl-title" ></p>
+	<p class="con-th" data-label="Author"><input type="text" value="Your name" class="tl-field tl-author" onkeydown="size=value.length||10"><time id="date-create"></time></p>
+	<hr class="bot-line">
+	<div id="editor-container"></div>
+</article>
+
+<div class="ql-toolbar" >
+	<span class="ql-formats" id="tooltip-controls">
+
+		<button type="button" class="ql-bold"><i class="fa fa-bold custom"></i></button>
+		<button type="button" class="ql-italic" id="link-button"><i class="fa fa-italic custom"></i></button>
+		<button type="button" class="ql-link" ><i class="fa fa-link custom"></i></button>
+		<button type="button" class="ql-blockquote"><i class="fa fa-quote-left"></i></button>
+		<button type="button" class="ql-header" value="1"><i class="fa fa-header custom"></i></button>
+		
+	</span>
+</div>
+
+	<span class="link-tabl" id="show-link"></span>
+
+
+
+
+
+<div id="sidebar-controls">
+  <button id="show-controls"><i class="fa fa-plus"></i></button>
+  <span class="controls">
+
+    <button id="image-button"><i class="fa fa-camera custom"></i></button>
+    <button id="video-button"><i class="fa fa-play custom"></i></button>
+    <button id="divider-button"><i class="fa fa-minus custom"></i></button>
+  </span>
+</div>
+
+<aside class="tx-edit-buttons">
+	<button id="edit-btn" class="txt-button btn-edit">Edit</button>
+	<button id="publish-btn" class="txt-button btn-publish">Publish</button>
+	<div id="error-msg"></div>
+</aside>
+
+<canvas id="img-can"></canvas>
+
+<script>
+
+
+
+	
+</script>
+<script src="js/core.js"></script>
+<script src="js/quill.min.js"></script>
+<script src="js/qlFunc.js"></script>
+
+
+</body>
+</html>

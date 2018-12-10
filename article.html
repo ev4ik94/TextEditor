@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Article</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/articles.js"></script>
+    <style>
+        textarea{
+            display: none;
+        }
+        .textarea-p{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+	<section class="wrap-art-view">
+		<button id="delete-article" onclick="delArt()">Article delete</button>
+		<button id="update-article" onclick="updArt()">Article update</button>
+		<button id="return-on-page" onclick="returnPage()"><i class="fa fa-arrow-left"></i></button>
+		<div class="head-art">
+			<h1 class="title-art"></h1>
+			<span class="address-date">
+				<address class="author-art"></address>
+				<time class="add-date"></time>
+			</span>
+			
+		</div>
+		<article id="content" class="main-content"></article>
+	</section>
+
+
+</body>
+</html>
